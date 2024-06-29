@@ -3,12 +3,12 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
 
-  const FOO = () => {
+  const foo = () => {
     console.log("FOO FUNCTION")
     return function inner() { return "INNER FUNCTION" }
   }
 
-  useEffect(() => { console.log(FOO()()) }, [])
+  useEffect(() => { console.log(foo()()) }, [])
 
   return (
     <main>
