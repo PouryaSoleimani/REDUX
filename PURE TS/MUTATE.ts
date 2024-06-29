@@ -1,8 +1,8 @@
 //^ MUTATE ===================================================================================================================================================================>
 // MUTATE
 // IMMUTATE
-// MUTABLE
-// IMMUTABLE
+// MUTABLE => number , string , boolean 
+// IMMUTABLE => array , object 
 
 // PRIMITIVE TYPES
 // REFERENCE TYPES
