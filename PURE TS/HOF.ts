@@ -18,9 +18,11 @@ console.log(randomIdGenerator("pourya", randomNumberGenerator))
 
 //RANDOM ID GENERATOR 2 ============================================================================================================================================================================>
 function randomIdGenerator2() {
-  return Math.ceil(Math.random() * 10000000).toString().slice(0, 4)
+  return Math.ceil(Math.random() * 10000000).toString().slice(0, 3)
 }
+
 function userGenerator(username: string, IDgenerator: Function) {
   return `${username} - ID  : ${IDgenerator()}`
 }
+
 console.log(userGenerator("Pourya Soleimani", randomIdGenerator2))
