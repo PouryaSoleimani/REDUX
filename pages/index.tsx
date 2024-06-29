@@ -4,8 +4,10 @@ import { useEffect, useState } from "react"
 export default function Home() {
 
   const foo = () => {
-    console.log("FOO FUNCTION")
-    return function inner() { return "INNER FUNCTION" }
+    console.log("HELLO")
+    return function hello() {
+      return "WORLD"
+    }
   }
 
   useEffect(() => { console.log(foo()()) }, [])
