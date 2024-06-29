@@ -2,7 +2,7 @@
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 //* A HOF
-let evenNumbers = numbers.filter((number: number) => { // HOF functions accept functions and return functions , or accept functions and return datas 
+let evenNumbers = numbers.filter((number: number) => { // {HOF} functions accept functions and return functions , or accept functions and return datas 
   return number % 2 === 0
 })
 console.log(evenNumbers)
@@ -26,3 +26,11 @@ function userGenerator(username: string, IDgenerator: Function) {
 }
 
 console.log(userGenerator("Pourya Soleimani", randomIdGenerator2))
+
+//FOO FUNCTION ============================================================================================================================================================================>
+function FOO() {
+  console.log("FOO FUNCTION")
+  function innerFoo() {
+    console.log("INNER FUNCITION")
+  }
+}
