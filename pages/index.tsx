@@ -3,12 +3,11 @@ import { useEffect, useState } from "react"
 
 export default function Home() {
 
-  const foo = () => {
-    console.log("HELLO")
-    return function hello() { return "WORLD" }
+  function plus(x: number) {
+    return function (y: number) { return x + y }
   }
 
-  useEffect(() => { console.log(foo()()) }, [])
+  useEffect(() => { console.log(plus(20)(30)) }, [])
 
   return (
     <main>
