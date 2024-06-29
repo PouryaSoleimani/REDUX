@@ -30,7 +30,13 @@ console.log(userGenerator("Pourya Soleimani", randomIdGenerator2))
 //FOO FUNCTION ============================================================================================================================================================================>
 function FOO() {
   console.log("FOO FUNCTION")
-  function innerFoo() {
+  return function () {
     console.log("INNER FUNCITION")
   }
 }
+console.log(FOO()())
+
+//PLUS ARROW FUNCTION ============================================================================================================================================================================>
+const plus = (x: number) => (y: number) => x + y
+console.log(plus(3)(5))
+
