@@ -2,10 +2,18 @@
 import { useEffect } from "react"
 
 export default function Home() {
-  let myArray3 = [1, 2, 3, 4, 5]
-  let reducedArray3: number = myArray3.reduce((a, b) => { return a + b })
+  let products = [
+    ["laptop", "monitor", "mouse", "keyboard"],
+    ["t-shirt", "pants", "shoes", "jackets"],
+    ["pen", "pencil", "bag", "eraser"]
+  ]
 
-  useEffect(() => { console.log(reducedArray3) }, [])
+  let flatedProducts = products.reduce((prevArray, nextArray) => {
+    return [...prevArray, ...nextArray]
+  })
+
+
+  useEffect(() => { console.log(flatedProducts) }, [])
 
   return (
     <main>
