@@ -3,9 +3,7 @@ import { useEffect } from "react"
 //^ HOME PAGE ___________________________________________________________________________________________________________________________________________________________________ 
 export default function Home() {
   useEffect(() => {
-    const myArray2 = [10, 20, 30, 40, 50, 60]
-    const reducedArray = myArray2.reduce((x, y) => { console.log(x, y); return x + y })
-    console.log(reducedArray)
+    console.log("REDUX PAGE")
   }, [])
 
   return (
