@@ -15,7 +15,6 @@ number2 = 8 // REASIGGN => IMMUTABLE
 
 console.log(number1, number2)
 
-
 // REFERENCE TYPES
 let obj1 = { id: 1, title: "FAKE TITLE" }
 let obj2 = obj1
