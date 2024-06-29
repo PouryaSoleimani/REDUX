@@ -10,11 +10,8 @@ console.log(evenNumbers)
 //! NOT A HOF
 function randomNumberGenerator() { return Math.ceil(Math.random() * 1000) }
 
-
-
-
 //RANDOM ID GENERATOR
 function randomIdGenerator(username: string, randomIdGenerator: Function) {
   return `${username} : ${randomIdGenerator()}`
 }
-console.log(randomIdGenerator("pourya", randomNumberGenerator))
+console.log(randomIdGenerator("pourya", randomNumberGenerator)) 
