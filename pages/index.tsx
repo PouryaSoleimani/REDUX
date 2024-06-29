@@ -3,8 +3,9 @@ import { useEffect } from "react"
 
 export default function Home() {
 
-  function plus(x: number) { return function (y: number) { return x + y } }
-  // OR : const plus = (x: number) => (y: number) => x + y
+  function plus(x: number) {
+    return function (y: number) { return x + y }
+  }
 
   useEffect(() => { console.log(plus(20)(30)) }, [])
 
