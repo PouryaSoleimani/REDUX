@@ -2,12 +2,12 @@
 import { useEffect } from "react"
 
 export default function Home() {
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  function randomNumberGenerator() {
-    return Math.ceil(Math.random() * 10000).toString().slice(0, 4)
-  }
-
-  useEffect(() => { console.log(randomNumberGenerator()) }, [])
+  let evenNumbers = numbers.filter((number: number) => {
+    return number % 2 === 0
+  })
+  useEffect(() => { console.log(evenNumbers) }, [])
 
   return (
     <main>
