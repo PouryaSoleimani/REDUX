@@ -1,4 +1,4 @@
-//* REDUCE METHOD
+//* REDUCE METHOD ============================================================================================================================================>
 let myArray = [1, 2, 3, 4, 5, 6]
 let arrayOutput = myArray.reduce((a, b) => { console.log(a, b); return a + b })
 console.log(arrayOutput)
