@@ -2,18 +2,12 @@
 import { useEffect } from "react"
 
 export default function Home() {
-  let products = [
-    ["laptop", "monitor", "mouse", "keyboard"],
-    ["t-shirt", "pants", "shoes", "jackets"],
-    ["pen", "pencil", "bag", "eraser"]
-  ]
 
-  let flatedProducts = products.reduce((prevArray, nextArray) => {
-    return [...prevArray, ...nextArray]
-  })
+  function randomNumberGenerator() {
+    return Math.ceil(Math.random() * 10000).toString().slice(0, 4)
+  }
 
-
-  useEffect(() => { console.log(flatedProducts) }, [])
+  useEffect(() => { console.log(randomNumberGenerator()) }, [])
 
   return (
     <main>
