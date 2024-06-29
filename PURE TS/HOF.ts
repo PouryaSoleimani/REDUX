@@ -1,4 +1,4 @@
-//^ HIGH ORDER FUNCTIONS ===========================================================================================================================================================> 
+//^ HIGH ORDER FUNCTIONS ==========================================================================================================================================================================> 
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 //* A HOF
@@ -10,13 +10,13 @@ console.log(evenNumbers)
 //! NOT A HOF
 function randomNumberGenerator() { return Math.ceil(Math.random() * 1000) }
 
-//RANDOM ID GENERATOR
+//RANDOM ID GENERATOR =============================================================================================================================================================================>
 function randomIdGenerator(username: string, randomIdGenerator: Function) {
   return `${username} : ${randomIdGenerator()}`
 }
 console.log(randomIdGenerator("pourya", randomNumberGenerator))
 
-//RANDOM ID GENERATOR 2
+//RANDOM ID GENERATOR 2 ============================================================================================================================================================================>
 function randomIdGenerator2() {
   return Math.ceil(Math.random() * 10000000).toString().slice(0, 4)
 }
