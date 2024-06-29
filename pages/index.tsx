@@ -2,7 +2,10 @@
 import { useEffect } from "react"
 
 export default function Home() {
-  useEffect(() => { console.log("REDUX HOMEPAGEs") }, [])
+  let myArray3 = [1, 2, 3, 4, 5]
+  let reducedArray3: number = myArray3.reduce((a, b) => { return a + b })
+
+  useEffect(() => { console.log(reducedArray3) }, [])
 
   return (
     <main>
