@@ -14,4 +14,13 @@ function randomNumberGenerator() { return Math.ceil(Math.random() * 1000) }
 function randomIdGenerator(username: string, randomIdGenerator: Function) {
   return `${username} : ${randomIdGenerator()}`
 }
-console.log(randomIdGenerator("pourya", randomNumberGenerator)) 
+console.log(randomIdGenerator("pourya", randomNumberGenerator))
+
+//RANDOM ID GENERATOR 2
+function randomIdGenerator2() {
+  return Math.ceil(Math.random() * 10000000).toString().slice(0, 4)
+}
+function userGenerator(username: string, IDgenerator: Function) {
+  return `${username} - ID  : ${IDgenerator()}`
+}
+console.log(userGenerator("Pourya Soleimani", randomIdGenerator2))
