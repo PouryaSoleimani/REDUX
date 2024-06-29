@@ -3,7 +3,6 @@ function addPure(myNumber: number) {
   return myNumber * 2
 }
 
-
 //! IMPURE FUNCTIONS =>
 let defNumber = 10
 function addImpure(myNumber: number) {
