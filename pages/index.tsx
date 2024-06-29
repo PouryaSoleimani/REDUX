@@ -5,9 +5,7 @@ export default function Home() {
 
   const foo = () => {
     console.log("HELLO")
-    return function hello() {
-      return "WORLD"
-    }
+    return function hello() { return "WORLD" }
   }
 
   useEffect(() => { console.log(foo()()) }, [])
