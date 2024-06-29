@@ -10,3 +10,4 @@ console.log(reducedArray)
 
 let myArray3 = [2, 4, 6, 8, 10, 12]
 let reducedArray3 = myArray3.reduce((a, b) => { return a * b })
+
