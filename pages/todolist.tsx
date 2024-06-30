@@ -28,7 +28,7 @@ const TodoListPage = () => {
       </form>
 
       <div id="todos">
-        <ul className='w-fit h-fit px-6 text-start py-10 border list-inside list-disc mx-auto mt-10 bg-slate-900/50 flex flex-col text-justify items-center justify-center text-3xl font-bold'>
+        <ul className='w-fit h-fit px-6 py-10 border list-inside list-disc mx-auto mt-10 bg-slate-900/50 flex flex-col text-justify items-center justify-center text-3xl font-bold'>
           {Todos.map(item => (
             <li key={item.id}>{item.title}</li>
           ))}
