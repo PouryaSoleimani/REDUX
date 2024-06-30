@@ -34,7 +34,7 @@ const TodoListPage = () => {
   }
 
   function completeTodo(event: React.MouseEvent<HTMLButtonElement, MouseEvent>, ID: number) {
-    const mainTodo = Todos.find((item: SingleTodoType) => { item.id === ID })
+    const mainTodo = Todos.find((item: SingleTodoType) => { return item.id == ID })
     console.log(mainTodo)
   }
   //* RETURN
