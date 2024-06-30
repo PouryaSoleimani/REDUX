@@ -34,8 +34,13 @@ const TodoListPage = () => {
   }
 
   function completeTodo(event: React.MouseEvent<HTMLButtonElement, MouseEvent>, ID: number) {
-    const mainTodo = Todos.find((item: SingleTodoType) => { return item.id == ID })
-    console.log(mainTodo)
+    const mainTodo: SingleTodoType = Todos.find((item: SingleTodoType) => { return item.id == ID })
+    const copy = [...Todos]
+    const filtered = copy.filter(item => item.id !== ID)
+    let newObj = { ...mainTodo, isCompleted: !mainTodo.isCompleted }
+    filtered.push(newObj)
+    setTodos(filtered)
+    console.log(Todos)
   }
   //* RETURN
   return (
@@ -54,7 +59,7 @@ const TodoListPage = () => {
           <ul className='h-fit px-6 py-4 border-2 list-inside list-disc mx-auto mt-10 bg-zinc-600/50 rounded-xl w-[20rem] flex flex-col text-start items-start justify-start text-3xl font-bold'>
             {Todos.map((item: SingleTodoType) => (
               <div className='flex items-center justify-between px-2 w-full'>
-                <li key={item.id}>{item.title}</li>
+                <li key={item.id} className={`${item.isCompleted ? "text-green-800" : ""}`}>{item.title}</li>
                 <button onClick={event => completeTodo(event, item.id)} className='text-xl bg-green-300 rounded-md p-1'>✅</button>
               </div>
             ))}
