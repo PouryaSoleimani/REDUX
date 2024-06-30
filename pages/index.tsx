@@ -1,22 +1,14 @@
 //^ REDUX HOME PAGE ___________________________________________________________________________________________________________________________________________________________________ 
-import { useEffect } from "react"
-import { todolistStore } from "@/PURE TS/REDUX_STORE"
+import React from 'react'
 
-export default function Home() {
-
-  let newTodo = { id: 3, title: "LEARN PWA", isCompleted: false }
-
-  function addTodo() {
-    todolistStore.push(newTodo)
-  }
-
-  useEffect(() => {
-    console.log(todolistStore); addTodo();
-  }, [])
-
+const Home = () => {
   return (
-    <main>
-      <h1 className="py-2 text-4xl font-extrabold bg-purple-700 text-center border-b-8">REDUX HOME PAGE</h1>
-    </main>
-  );
+    <>
+      <div>
+        <h1 className='text-3xl font-extrabold bg-purple-700 text-center py-2 border-b-8'>REDUX HOME PAGE</h1>
+      </div>
+    </>
+  )
 }
+
+export default Home
