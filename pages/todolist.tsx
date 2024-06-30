@@ -28,7 +28,7 @@ const TodoListPage = () => {
         <button type='submit' className='bg-green-600 px-4 py-1 font-extrabold rounded-md'>+</button>
       </form>
 
-      <div id="todos" suppressHydrationWarning >
+      <div id="todos" >
         {!Todos.length ? (
           <h1>NO TODOS TO SHOW ....</h1>
         ) : (
