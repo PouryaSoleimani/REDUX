@@ -1,6 +1,6 @@
 //^ REDUX REDUCER =====================================================================================================================================================
 type ActionType = { type: string }
-//* COUNTER ACTIONS =====================================================================================================================================================
+//* COUNTER ACTIONS ___________________________________________________________________________________________________________________________________________________
 let incrementAction = { type: 'INCREMENT' }
 let decrementAction = { type: 'DECREMENT' }
 let newStore = 0
@@ -12,7 +12,7 @@ function counterReducer(action: ActionType) {
     default: { return newStore }
   }
 }
-// TODOLIST ACTIONS =====================================================================================================================================================
+// TODOLIST ACTIONS ___________________________________________________________________________________________________________________________________________________
 let allTodos: [] = []
 
 let createTodoAction = { type: "ADD_TODO" }
@@ -30,13 +30,13 @@ function todoListReducer(action: ActionType) {
     default: { return allTodos }
   }
 }
-//? SHOP ACTIONS =====================================================================================================================================================
+//? SHOP ACTIONS ___________________________________________________________________________________________________________________________________________________
 let addProductAction = { type: "ADD_PRODUCT" }
 let removeProductAction = { type: "REMOVE_PRODUCT" }
 let editProductAction = { type: "EDIT_PRODUCT" }
 let addToCartAction = { type: "ADD_TO_CART" }
 let removeFromCartAction = { type: "REMOVE_FROM_CART" }
-
+//? SHOP REDUCERS
 function shopProductsReducer(action: ActionType) {
   switch (action.type) {
     case "ADD_PRODUCT": { return }
