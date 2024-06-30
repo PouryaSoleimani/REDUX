@@ -12,9 +12,15 @@ type ActionType2 = { type: string }
 //* REDUCER
 function counterReducer2(state = 0, action: ActionType2) {
   switch (action.type) {
-    case "INCREMENT": { return state + 1 }
-    case "DECREMENT": { return state - 1 }
-    case "RESET": { return state }
+    case "INCREMENT": {
+      return state + 1
+    }
+    case "DECREMENT": {
+      return state - 1
+    }``
+    case "RESET": {
+      return state
+    }
     default: { }
   }
 }
