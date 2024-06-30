@@ -6,9 +6,13 @@ export default function Home() {
 
   let newTodo = { id: 3, title: "LEARN PWA", isCompleted: false }
 
-  function addTodo() { todolistStore.push(newTodo) }
+  function addTodo() {
+    todolistStore.push(newTodo)
+  }
 
-  useEffect(() => { console.log(todolistStore); addTodo(); }, [])
+  useEffect(() => {
+    console.log(todolistStore); addTodo();
+  }, [])
 
   return (
     <main>
