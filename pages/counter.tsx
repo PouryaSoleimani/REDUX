@@ -1,13 +1,15 @@
 //^ COUNTER PAGE =======================================================================================================================================================================================================>
+"use client"
 import React from 'react'
 import { useRecoilState } from 'recoil'
 import { COUNTERSTATE } from '@/RECOIL/atoms'
+import { NextPage } from 'next'
 
 
 
 
 //COMPONENT ===========================================================================================================================================================================================================>
-const CounterPage = () => {
+const CounterPage: NextPage = () => {
 
   const [COUNT, SETCOUNT] = useRecoilState(COUNTERSTATE)
 
@@ -21,9 +23,9 @@ const CounterPage = () => {
         <h1 className='text-4xl font-extrabold mt-4'>{COUNT}</h1>
 
         <div className='flex items-center justify-center space-x-1 mt-10 mb-4'>
-          <button onClick={() => SETCOUNT(prevCount => prevCount + 1)} className='w-20 h-10 bg-green-600 rounded-lg'>➕</button>
+          <button onClick={() => SETCOUNT((prevCount: number) => prevCount + 1)} className='w-20 h-10 bg-green-600 rounded-lg'>➕</button>
           <button className='w-20 h-10 bg-sky-600 rounded-lg' onClick={() => SETCOUNT(0)}>🔄</button>
-          <button className='w-20 h-10 bg-red-600 rounded-lg' onClick={() => SETCOUNT(prevCount => prevCount - 1)}>➖</button>
+          <button className='w-20 h-10 bg-red-600 rounded-lg' onClick={() => SETCOUNT((prevCount: number) => prevCount - 1)}>➖</button>
         </div>
 
       </div>
