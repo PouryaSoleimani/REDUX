@@ -4,10 +4,10 @@
 // let decrementAction = { type: 'DECREMENT' }
 
 // TODOLIST ACTIONS
-let createTodoAction = { type: "ADD_TODO" }
-let removeTodoAction = { type: "REMOVE_TODO" }
-let updateTodoAction = { type: "UPDATE_TODO" }
-let getTodosAction = { type: "GET_TODOS" }
+// let createTodoAction = { type: "ADD_TODO" }
+// let removeTodoAction = { type: "REMOVE_TODO" }
+// let updateTodoAction = { type: "UPDATE_TODO" }
+// let getTodosAction = { type: "GET_TODOS" }
 
 
 //? SHOP ACTIONS 
