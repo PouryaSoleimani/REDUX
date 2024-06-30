@@ -1,7 +1,8 @@
 import { TODOS } from '@/RECOIL/atoms'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRecoilState } from 'recoil'
 import { recoilPersist } from 'recoil-persist'
+import { uuid } from 'uuidv4';
 const { persistAtom } = recoilPersist()
 
 type SingleTodoType = { id: number, title: string, isCompleted: boolean }
@@ -11,16 +12,19 @@ const TodoListPage = () => {
   const [Todos, setTodos] = useRecoilState(TODOS)
   const [title, setTitle] = useState('')
 
+  useEffect(() => {
+    console.log(Todos)
+  }, [Todos])
 
   function addTodoHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    let mainTodo = { id: Math.random(), title: title, isCompleted: false, effects_UNSTABLE: [persistAtom], }
+    let mainTodo = { id: uuid(), title: title, isCompleted: false, effects_UNSTABLE: [persistAtom], }
     const copy = [...Todos]
     copy.push(mainTodo)
     setTodos(copy)
     setTitle('')
   }
-
+  function resetTodos() { setTodos([]) }
 
   return (
     <main suppressHydrationWarning className='w-screen h-screen flex flex-col'>
@@ -28,6 +32,7 @@ const TodoListPage = () => {
       <form id="input" onSubmit={addTodoHandler} className='w-screen flex py-2 items-center justify-center space-x-1 bg-gradient-to-r from-slate-900 via-slate-800 to-zinc-900'>
         <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder='Add Todo' className='px-2 py-1 rounded-md text-black font-bold ' />
         <button type='submit' className='bg-green-600 px-4 py-1 font-extrabold rounded-md'>+</button>
+        <button onClick={resetTodos} className='bg-orange-600 px-4 py-1 font-extrabold rounded-md'>RESET</button>
       </form>
 
       <div id="todos" >
