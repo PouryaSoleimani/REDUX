@@ -9,7 +9,7 @@ const { persistAtom } = recoilPersist()
 type SingleTodoType = { id: number, title: string, isCompleted: boolean }
 //^ COMPONENT ____________________________________________________________________________________________________________________________________________________________________________
 const TodoListPage = () => {
-  const notify2 = () => toast.error('TODO INPUT IS EMPTY');
+  const notify2 = () => toast.error('TODO INPUT IS EMPTY', { style: { fontWeight: "900" } });
   const [Todos, setTodos] = useRecoilState(TODOS)
   const [title, setTitle] = useState('')
 
