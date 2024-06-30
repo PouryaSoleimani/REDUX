@@ -3,8 +3,11 @@ import { useEffect } from "react"
 import { todolistStore } from "@/PURE TS/REDUX_STORE"
 
 export default function Home() {
+  
   let newTodo = { id: 3, title: "LEARN PWA", isCompleted: false }
+
   function addTodo() { todolistStore.push(newTodo) }
+
   useEffect(() => { console.log(todolistStore); addTodo(); }, [])
 
   return (
