@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue, } from 'recoil';
+import { RecoilRoot } from 'recoil';
 export default function Document() {
   return (
     <RecoilRoot>
