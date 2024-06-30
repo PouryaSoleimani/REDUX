@@ -4,7 +4,30 @@ import { createStoreHook } from "react-redux"
 
 //^COMPONENT
 const Counter = () => {
-  console.log(createStoreHook)
+
+  const store = createStoreHook()
+
+  console.log(store)
+
+  type ActionType2 = { type: string }
+  //* REDUCER
+  function counterReducer2(action: ActionType2) {
+    switch (action.type) {
+      case "INCREMENT": { }
+      case "DECREMENT": { }
+      case "RESET": { }
+      default: { }
+    }
+  }
+
+
+
+
+
+
+
+
+  //RETURN
   return (
     <main className='flex items-center justify-center w-full h-screen'>
       <div id="counter" className=' flex flex-col items-center py-6 justify-center bg-zinc-900 min-w-[30%] min-h-[80%] rounded-xl border-8 border-zinc-400'>
