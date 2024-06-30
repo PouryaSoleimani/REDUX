@@ -17,7 +17,7 @@ function counterReducer2(state = 0, action: ActionType2) {
     }
     case "DECREMENT": {
       return state - 1
-    }``
+    }
     case "RESET": {
       return state
     }
