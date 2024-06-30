@@ -1,3 +1,5 @@
 //^ ATOMS
+import { atom } from "recoil";
 
-const COUNTERSTATE = atom({ key: 'counterstate', default: 0, });
+
+export const COUNTERSTATE = atom({ key: 'counterstate', default: 0, });

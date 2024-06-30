@@ -2,7 +2,6 @@ import { Html, Head, Main, NextScript } from "next/document";
 import { RecoilRoot } from 'recoil';
 export default function Document() {
   return (
-    <RecoilRoot>
       <Html lang="en">
         <Head />
         <body>
@@ -10,6 +9,5 @@ export default function Document() {
           <NextScript />
         </body>
       </Html>
-    </RecoilRoot>
   );
 }

@@ -1,7 +1,15 @@
 //^ COUNTER PAGE =========================================================================================================================================================>
 import React from 'react'
+import { useRecoilState } from 'recoil'
+import { COUNTERSTATE } from '@/RECOIL/atoms'
 
+
+
+
+//COMPONENT
 const CounterPage = () => {
+  const [COUNT, SETCOUNT] = useRecoilState(COUNTERSTATE)
+  console.log(COUNT)
   return (
     <section className='flex flex-col '>
       <div>
