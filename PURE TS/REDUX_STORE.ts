@@ -1,6 +1,6 @@
 //^ REDUX STORE =================================================================================================================================================>
 //* COUNTER STORE 
-let counterStore = 0 //Number Type Store Variable
+let counterStore = 0 // Number Type Store Variable
 
 
 
