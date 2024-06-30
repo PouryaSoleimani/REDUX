@@ -13,7 +13,7 @@ let number1 = 12
 let number2 = number1
 number2 = 8 // REASIGGN => IMMUTABLE
 console.log(number1, number2)
-// ------
+
 let numbersArray = [1, 2, 3, 4, 5]
 numbersArray = [6, 7, 8, 9, 10]
 console.log(numbersArray) //=> [6,7,8,9,10] => REASIGGNED AND NOT MUTATED
