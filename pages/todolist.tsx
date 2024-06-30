@@ -28,7 +28,10 @@ const TodoListPage = () => {
     } else { notify2() }
   }
 
-  function resetTodos() { setTodos([]); setTitle('') }
+  function resetTodos() {
+    setTodos([]);
+    setTitle('')
+  }
 
 
   //* RETURN
