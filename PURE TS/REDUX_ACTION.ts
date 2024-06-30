@@ -10,7 +10,7 @@ let updateTodoAction = { type: "UPDATE_TODO" }
 let getTodosAction = { type: "GET_TODOS" }
 
 
-//? SHOP ACTION 
+//? SHOP ACTIONS 
 let addProductAction = { type: "ADD_PRODUCT" }
 let removeProductAction = { type: "REMOVE_PRODUCT" }
 let editProductAction = { type: "EDIT_PRODUCT" }
