@@ -11,8 +11,8 @@
 
 
 //? SHOP ACTIONS 
-let addProductAction = { type: "ADD_PRODUCT" }
-let removeProductAction = { type: "REMOVE_PRODUCT" }
-let editProductAction = { type: "EDIT_PRODUCT" }
-let addToCartAction = { type: "ADD_TO_CART" }
-let removeFromCartAction = { type: "REMOVE_FROM_CART" }  
+// let addProductAction = { type: "ADD_PRODUCT" }
+// let removeProductAction = { type: "REMOVE_PRODUCT" }
+// let editProductAction = { type: "EDIT_PRODUCT" }
+// let addToCartAction = { type: "ADD_TO_CART" }
+// let removeFromCartAction = { type: "REMOVE_FROM_CART" }  
