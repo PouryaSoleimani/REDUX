@@ -8,7 +8,7 @@ import { COUNTERSTATE } from '@/RECOIL/atoms'
 
 //COMPONENT =========================================================================================================================================================>
 const CounterPage = () => {
-  
+
   const [COUNT, SETCOUNT] = useRecoilState(COUNTERSTATE)
   console.log(COUNT)
 
