@@ -8,7 +8,7 @@ import toast, { Toaster } from 'react-hot-toast';
 const { persistAtom } = recoilPersist()
 
 type SingleTodoType = { id: number, title: string, isCompleted: boolean }
-//^ COMPONENT ____________________________________________________________________________________________________________________________________________________________________________
+// COMPONENT ____________________________________________________________________________________________________________________________________________________________________________
 const TodoListPage = () => {
 
   const notify2 = () => toast.error('TODO INPUT IS EMPTY', { style: { fontWeight: "900" } });
@@ -38,7 +38,7 @@ const TodoListPage = () => {
       <form id="input" onSubmit={addTodoHandler} className='w-screen flex py-2 items-center justify-center space-x-1 bg-gradient-to-r from-slate-900 via-slate-800 to-zinc-900'>
         <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder='Add Todo' className='px-2 py-1 rounded-md text-black font-bold ' />
         <button type='submit' className='bg-green-600 px-4 py-1 font-extrabold rounded-md'>+</button>
-        <span onClick={resetTodos} className='bg-orange-600 px-4 py-1 font-extrabold rounded-md'>RESET</span>
+        <span onClick={resetTodos} className='bg-orange-600 px-4 py-1 font-extrabold rounded-md cursor-pointer'>RESET</span>
       </form>
 
       <div id="todos" >
