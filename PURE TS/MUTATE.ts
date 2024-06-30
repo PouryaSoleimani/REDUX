@@ -1,8 +1,8 @@
 //^ MUTATE ===================================================================================================================================================================>
-// MUTATE
-// IMMUTATE
-// MUTABLE => number , string , boolean 
-// IMMUTABLE => array , object 
+// MUTATE تغییر دادن
+// IMMUTATE تغییر ندادن
+// MUTABLE => number , string , boolean  تغییر پذیر
+// IMMUTABLE => array , object تغییر ناپذیر
 
 // PRIMITIVE TYPES
 // REFERENCE TYPES
@@ -27,6 +27,7 @@ obj2.title = "REAL TITLE" // MUTATING => MUTABLE
 
 console.log(obj1, obj2)
 
+//===================================================================================================================================================================>
 // METHODS WITH MUTATE :( MUTATE = CHANGING THE ORIGINAL VARIBALE )
 let array = [1, 2, 3, 4, 5, 6, 7]
 let newArray = array.map(item => item * 2) // -> .map doesn't mutate the array
