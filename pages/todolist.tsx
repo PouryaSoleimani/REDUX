@@ -1,7 +1,10 @@
 import { TODOS } from '@/RECOIL/atoms'
 import React, { useState } from 'react'
 import { useRecoilState } from 'recoil'
+import { recoilPersist } from 'recoil-persist'
+const { persistAtom } = recoilPersist()
 
+//& COMPONENT
 const TodoListPage = () => {
 
   const [Todos, setTodos] = useRecoilState(TODOS)
@@ -9,7 +12,7 @@ const TodoListPage = () => {
 
   function addTodoHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    let mainTodo = { id: Math.random(), title: title, isCompleted: false }
+    let mainTodo = { id: Math.random(), title: title, isCompleted: false , effects_UNSTABLE: [persistAtom], }
     const copy = [...Todos]
     copy.push(mainTodo)
     setTodos(copy)
