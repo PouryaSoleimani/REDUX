@@ -24,7 +24,7 @@ const TodoListPage = () => {
 
       <form id="input" onSubmit={addTodoHandler} className='w-screen flex py-2 items-center justify-center space-x-1 bg-gradient-to-r from-slate-900 via-slate-800 to-zinc-900'>
         <input value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder='Add Todo' className='px-2 py-1 rounded-md text-black font-bold ' />
-        <button type='submit' className='bg-green-600 p-1 rounded-md'>➕</button>
+        <button type='submit' className='bg-green-600 p-1 rounded-md'>+</button>
       </form>
 
       <div id="todos">
