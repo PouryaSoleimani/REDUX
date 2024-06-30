@@ -40,8 +40,8 @@ const TodoListPage = () => {
     let newObj = { ...mainTodo, isCompleted: !mainTodo.isCompleted }
     filtered.push(newObj)
     setTodos(filtered)
-    console.log(Todos)
   }
+
   //* RETURN
   return (
     <main suppressHydrationWarning className='w-screen h-screen flex flex-col'>
