@@ -11,6 +11,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
     "next": "14.2.4",
+    "react-redux": "^9.1.0",
     "react": "^18",
     "react-dom": "^18",
     "redux": "^5.0.1"
