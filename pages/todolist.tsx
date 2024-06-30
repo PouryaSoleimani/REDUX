@@ -48,7 +48,7 @@ const TodoListPage = () => {
         {!Todos.length ? (
           <h1 className='text-center bg-red-900 text-3xl w-1/2 mx-auto rounded-xl font-extrabold mt-32 py-10'>NO TODOS TO SHOW ....</h1>
         ) : (
-          <ul className='w-fit h-fit px-6 py-10 border list-inside list-disc mx-auto mt-10 bg-slate-900/50 flex flex-col text-justify items-center justify-center text-3xl font-bold'>
+          <ul className='h-fit px-6 py-4 border-2 list-inside list-disc mx-auto mt-10 bg-zinc-600/50 rounded-xl w-[20rem] flex flex-col text-start items-start justify-start text-3xl font-bold'>
             {Todos.map((item: SingleTodoType) => (<li key={item.id}>{item.title}</li>))}
           </ul>
         )}
