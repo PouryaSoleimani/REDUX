@@ -1,3 +1,4 @@
+import { createStoreHook } from "react-redux"
 
 
 //^ COUNTER_REDUCER
@@ -9,11 +10,12 @@ const numElem = document.querySelector("#numElem") as HTMLHeadingElement
 
 type ActionType2 = { type: string }
 //* REDUCER
-function counterReducer2(action: ActionType2) {
+function counterReducer2(state = 0, action: ActionType2) {
   switch (action.type) {
-    case "INCREMENT": { }
-    case "DECREMENT": { }
-    case "RESET": { }
+    case "INCREMENT": { return state + 1 }
+    case "DECREMENT": { return state - 1 }
+    case "RESET": { return state }
     default: { }
   }
 }
+const store = createStoreHook()
