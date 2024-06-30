@@ -3,7 +3,11 @@ import { useEffect } from "react"
 
 export default function Home() {
 
-  function plus(x: number) { return function (y: number) { return x + y } }
+  function plus(x: number) {
+    return function (y: number) {
+      return x + y
+    }
+  }
 
   useEffect(() => { console.log(plus(20)(30)) }, [])
 
