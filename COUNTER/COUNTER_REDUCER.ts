@@ -15,4 +15,3 @@ function counterReducer2(action: ActionType2) {
     default: { }
   }
 }
-

@@ -1,7 +1,8 @@
 //* COUNTER PAGE ========================================================================================================================================   
-
 import React from 'react'
-import "@/COUNTER/COUNTER_REDUCER"
+
+
+//^COMPONENT
 const Counter = () => {
   return (
     <main className='flex items-center justify-center w-full h-screen'>
