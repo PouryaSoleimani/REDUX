@@ -12,8 +12,11 @@
 let number1 = 12
 let number2 = number1
 number2 = 8 // REASIGGN => IMMUTABLE
-
 console.log(number1, number2)
+// ------
+let numbersArray = [1, 2, 3, 4, 5]
+numbersArray = [6, 7, 8, 9, 10]
+console.log(numbersArray) //=> [6,7,8,9,10] => REASIGGNED AND NOT MUTATED
 
 // REFERENCE TYPES
 let obj1 = { id: 1, title: "FAKE TITLE" }
@@ -33,4 +36,3 @@ console.log(array, newArray) // => array = [1, 2, 3, 4, 5, 6, 7] && newArray = [
 let array2 = [10, 20, 30, 40, 50, 60]
 let reversedArray = array2.reverse() //-> .reverse() mutates the array
 console.log(array2, reversedArray) // array2 = [60,50,40,30,20,10] && reversedArray = [60,50,40,30,20,10]
- 
