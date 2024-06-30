@@ -1,3 +1,5 @@
+import { createStoreHook } from "react-redux"
+
 //^ COUNTER_REDUCER
 const incButton = document.querySelector("#incButton") as HTMLButtonElement
 const decButton = document.querySelector("#decButton") as HTMLButtonElement
@@ -15,3 +17,4 @@ function counterReducer2(action: ActionType2) {
     default: { }
   }
 }
+console.log(createStoreHook)
