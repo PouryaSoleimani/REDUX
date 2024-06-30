@@ -10,6 +10,7 @@ import { COUNTERSTATE } from '@/RECOIL/atoms'
 const CounterPage = () => {
   const [COUNT, SETCOUNT] = useRecoilState(COUNTERSTATE)
   console.log(COUNT)
+
   return (
     <section className='flex flex-col '>
       <div>
@@ -17,12 +18,14 @@ const CounterPage = () => {
       </div>
 
       <div id="Container" className='bg-zinc-700 rounded-lg min-w-[30%] min-h-[70%] mt-10 mx-auto flex flex-col items-center justify-center'>
-        <h1 className='text-4xl font-extrabold mt-4'>0</h1>
+        <h1 className='text-4xl font-extrabold mt-4'>{COUNT}</h1>
+
         <div className='flex items-center justify-center space-x-7 mt-10 mb-4'>
-          <button className='w-20 h-10 bg-green-600 rounded-lg'>➕</button>
-          <button className='w-20 h-10 bg-sky-600 rounded-lg'>🔄</button>
-          <button className='w-20 h-10 bg-red-600 rounded-lg'>➖</button>
+          <button onClick={() => SETCOUNT(prevCount => prevCount + 1)} className='w-20 h-10 bg-green-600 rounded-lg'>➕</button>
+          <button className='w-20 h-10 bg-sky-600 rounded-lg' onClick={() => SETCOUNT(0)}>🔄</button>
+          <button className='w-20 h-10 bg-red-600 rounded-lg' onClick={() => SETCOUNT(prevCount => prevCount - 1)}>➖</button>
         </div>
+
       </div>
     </section>
   )
