@@ -33,7 +33,10 @@ const TodoListPage = () => {
     setTitle('')
   }
 
-
+  function completeTodo(event: React.MouseEvent<HTMLButtonElement, MouseEvent>, ID: number) {
+    const mainTodo = Todos.find((item: SingleTodoType) => { item.id === ID })
+    console.log(mainTodo)
+  }
   //* RETURN
   return (
     <main suppressHydrationWarning className='w-screen h-screen flex flex-col'>
@@ -49,7 +52,12 @@ const TodoListPage = () => {
           <h1 className='text-center bg-red-900 text-3xl w-1/2 mx-auto rounded-xl font-extrabold mt-32 py-10'>NO TODOS TO SHOW ....</h1>
         ) : (
           <ul className='h-fit px-6 py-4 border-2 list-inside list-disc mx-auto mt-10 bg-zinc-600/50 rounded-xl w-[20rem] flex flex-col text-start items-start justify-start text-3xl font-bold'>
-            {Todos.map((item: SingleTodoType) => (<li key={item.id}>{item.title}</li>))}
+            {Todos.map((item: SingleTodoType) => (
+              <div className='flex items-center justify-between px-2 w-full'>
+                <li key={item.id}>{item.title}</li>
+                <button onClick={event => completeTodo(event, item.id)} className='text-xl bg-green-300 rounded-md p-1'>✅</button>
+              </div>
+            ))}
           </ul>
         )}
       </div>
