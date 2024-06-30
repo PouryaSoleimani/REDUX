@@ -23,7 +23,9 @@ const TodoListPage = () => {
       copy.push(mainTodo)
       setTodos(copy)
       setTitle('')
-    } else { notify2() }
+    } else {
+      notify2()
+    }
   }
 
   function resetTodos() {
