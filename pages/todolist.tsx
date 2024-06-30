@@ -19,8 +19,8 @@ const TodoListPage = () => {
     setTodos(copy)
     setTitle('')
   }
-  
-  
+
+
   return (
     <main suppressHydrationWarning className='w-screen h-screen flex flex-col'>
 
