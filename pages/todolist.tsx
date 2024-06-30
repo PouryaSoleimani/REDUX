@@ -11,6 +11,7 @@ const TodoListPage = () => {
   const [Todos, setTodos] = useRecoilState(TODOS)
   const [title, setTitle] = useState('')
 
+
   function addTodoHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     let mainTodo = { id: Math.random(), title: title, isCompleted: false, effects_UNSTABLE: [persistAtom], }
