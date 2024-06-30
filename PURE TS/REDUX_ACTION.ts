@@ -1,7 +1,7 @@
 //^ REDUX ACTIONS ======================================================================================================================================
 //* COUNTER ACTIONS
-let incrementAction = { type: 'INCREMENT' }
-let decrementAction = { type: 'DECREMENT' }
+// let incrementAction = { type: 'INCREMENT' }
+// let decrementAction = { type: 'DECREMENT' }
 
 // TODOLIST ACTIONS
 let createTodoAction = { type: "ADD_TODO" }
