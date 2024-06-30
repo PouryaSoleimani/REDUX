@@ -2,12 +2,10 @@
 import { TODOS } from '@/RECOIL/atoms'
 import React, { useEffect, useState } from 'react'
 import { useRecoilState } from 'recoil'
-import { recoilPersist } from 'recoil-persist'
 import { uuid } from 'uuidv4';
 import toast, { Toaster } from 'react-hot-toast';
-const { persistAtom } = recoilPersist()
-
 type SingleTodoType = { id: number, title: string, isCompleted: boolean }
+
 // COMPONENT ____________________________________________________________________________________________________________________________________________________________________________
 const TodoListPage = () => {
 
