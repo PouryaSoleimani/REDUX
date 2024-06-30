@@ -7,7 +7,7 @@ const numElem = document.querySelector("#numElem") as HTMLHeadingElement
 
 type ActionType2 = { type: string }
 //~ REDUCER
-function counterReducer(action: ActionType2) {
+function counterReducer2(action: ActionType2) {
   switch (action.type) {
     case "INCREMENT": { }
     case "DECREMENT": { }
