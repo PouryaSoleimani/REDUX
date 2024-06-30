@@ -12,7 +12,7 @@ const TodoListPage = () => {
 
   function addTodoHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    let mainTodo = { id: Math.random(), title: title, isCompleted: false , effects_UNSTABLE: [persistAtom], }
+    let mainTodo = { id: Math.random(), title: title, isCompleted: false, effects_UNSTABLE: [persistAtom], }
     const copy = [...Todos]
     copy.push(mainTodo)
     setTodos(copy)
