@@ -3,7 +3,6 @@ type ActionType = { type: string }
 //* COUNTER ACTIONS =====================================================================================================================================================
 let incrementAction = { type: 'INCREMENT' }
 let decrementAction = { type: 'DECREMENT' }
-
 let newStore = 0
 // * COUNTER REDUCER 
 function counterReducer(action: ActionType) {
@@ -13,7 +12,6 @@ function counterReducer(action: ActionType) {
     default: { return newStore }
   }
 }
-
 // TODOLIST ACTIONS =====================================================================================================================================================
 let allTodos: [] = []
 
@@ -29,8 +27,7 @@ function todoListReducer(action: ActionType) {
     case "REMOVE_TODO": { return allTodos }
     case "UPDATE_TODO": { return allTodos }
     case "GET_TODOS": { return allTodos }
-
     default: { return allTodos }
   }
-
 }
+//? SHOP ACTIONS =====================================================================================================================================================
