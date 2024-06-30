@@ -29,9 +29,13 @@ const TodoListPage = () => {
       </form>
 
       <div id="todos" suppressHydrationWarning >
-        <ul className='w-fit h-fit px-6 py-10 border list-inside list-disc mx-auto mt-10 bg-slate-900/50 flex flex-col text-justify items-center justify-center text-3xl font-bold'>
-          {Todos?.map((item: SingleTodoType) => (<li key={item.id}>{item.title}</li>))}
-        </ul>
+        {!Todos.length ? (
+          <h1>NO TODOS TO SHOW ....</h1>
+        ) : (
+          <ul className='w-fit h-fit px-6 py-10 border list-inside list-disc mx-auto mt-10 bg-slate-900/50 flex flex-col text-justify items-center justify-center text-3xl font-bold'>
+            {Todos?.map((item: SingleTodoType) => (<li key={item.id}>{item.title}</li>))}
+          </ul>
+        )}
       </div>
     </main>
   )
