@@ -1,15 +1,11 @@
 //^ REDUX HOME PAGE ___________________________________________________________________________________________________________________________________________________________________ 
 import { useEffect } from "react"
+import { todolistStore } from "@/PURE TS/REDUX_STORE"
 
 export default function Home() {
-
-  function plus(x: number) {
-    return function (y: number) {
-      return x + y
-    }
-  }
-
-  useEffect(() => { console.log(plus(20)(30)) }, [])
+  let newTodo = { id: 3, title: "LEARN PWA", isCompleted: false }
+  function addTodo() { todolistStore.push(newTodo) }
+  useEffect(() => { console.log(todolistStore); addTodo(); }, [])
 
   return (
     <main>
