@@ -1,4 +1,4 @@
-//^ COUNTER PAGE =======================================================================================================================================================================================================>
+//^ COUNTER PAGE 
 "use client"
 import React from 'react'
 import { useRecoilState } from 'recoil'
@@ -6,7 +6,7 @@ import { COUNTERSTATE } from '@/RECOIL/atoms'
 import { NextPage } from 'next'
 
 
-//COMPONENT ===========================================================================================================================================================================================================>
+//COMPONENT 
 const CounterPage: NextPage = () => {
 
   const [COUNT, SETCOUNT] = useRecoilState(COUNTERSTATE)
