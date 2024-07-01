@@ -1,4 +1,4 @@
 //^ REDUX ACTION TYPES FILE
 
-const counterIncrement = "INCREMENT"
-const counterDecrement = "DECREMENT"
+export const counterIncrement = "INCREMENT"
+export const counterDecrement = "DECREMENT"

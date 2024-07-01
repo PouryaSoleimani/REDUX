@@ -1,9 +1,10 @@
 //! REDUX REDUCER FILE 
+import { counterIncrement, counterDecrement } from "./actionTypes"
 
 const reducer = (state = 0, action) => {
   switch (action.type) {
-    case "INCREMENT": { return state + 1 }
-    case "DECREMENT": { return state - 1 }
+    case counterIncrement: { return state + 1 }
+    case counterDecrement: { return state - 1 }
     default: { return state }
   }
 }
