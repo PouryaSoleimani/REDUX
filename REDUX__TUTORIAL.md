@@ -32,3 +32,16 @@ export default store
 const counterIncrement = "INCREMENT"
 const counterDecrement = "DECREMENT"
 ```
+
+6 - make a file name `actionCreators.js` and inside that file : 
+```js
+import { counterIncrement, counterDecrement } from "./actionTypes";
+
+export const counterIncrementAction = () => {
+  return { type: counterIncrement }
+}
+
+export const counterDecrementAction = () => {
+  return { type: counterDecrement }
+}
+```
