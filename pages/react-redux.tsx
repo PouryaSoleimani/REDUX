@@ -1,3 +1,4 @@
+//^ REACT-REDUX PAGE ==================================================================================================================================
 import React, { useState } from 'react'
 
 
@@ -5,6 +6,7 @@ import React, { useState } from 'react'
 
 
 const ReactReduxPage = () => {
+
   const [counter, setCounter] = useState(0)
   const increment = () => { setCounter(counter => counter + 1) }
   const decrement = () => { setCounter(counter => counter - 1) }
