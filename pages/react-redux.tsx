@@ -1,4 +1,4 @@
-//^ REACT-REDUX PAGE
+//^ REACT-REDUX PAGE =======================================================================================================
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 
