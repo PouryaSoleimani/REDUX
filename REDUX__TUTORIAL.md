@@ -1,7 +1,7 @@
 <!-- ~ REDUX TUTORIAL -->
-1 - make a folder name {redux} in the root directory of the project
-2 - inside the redux folder , make a file named {reducer.js} =>
-3 - inside the file {reducer.js} :
+1 - make a folder name `{redux}` in the root directory of the project
+2 - inside the redux folder , make a file named `{reducer.js}` =>
+3 - inside the file `{reducer.js}` :
 
 ```js
  const reducer = (state = 0, action) => {
@@ -14,7 +14,7 @@
 export default reducer
 ```
 
-4 - make a file named {store.js} in the redux folder , inside the {store.js} file : 
+4 - make a file named `{store.js}` in the redux folder , inside the {store.js} file : 
 
 ```js
 import { legacy_createStore } from "redux";
@@ -26,7 +26,7 @@ export default store
 ```
 
 
-5- make a file named {actionTypes.js} in the redux folder , inside the {actionTypes.js} file : 
+5- make a file named `{actionTypes.js}` in the redux folder , inside the {actionTypes.js} file : 
 
 ```js 
 const counterIncrement = "INCREMENT"
