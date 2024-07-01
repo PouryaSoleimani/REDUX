@@ -1,15 +1,13 @@
 //^ COUNTER PAGE 
 "use client"
-import React from 'react'
-import { useRecoilState } from 'recoil'
-import { COUNTERSTATE } from '@/RECOIL/atoms'
+import React, { useState } from 'react'
 import { NextPage } from 'next'
-
+import { counterIncrementAction, counterDecrementAction } from "@/redux/actionCreators";
 
 //COMPONENT 
-const CounterPage: NextPage = () => {
+const CounterPage: NextPage = ({counter , onIncrement , onDecrement}) => {
 
-  const [COUNT, SETCOUNT] = useRecoilState(COUNTERSTATE)
+  const [COUNT, SETCOUNT] = useState(0)
 
   return (
     <section className='flex flex-col '>
