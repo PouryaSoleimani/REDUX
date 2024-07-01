@@ -7,7 +7,10 @@ import { counterIncrementAction, counterDecrementAction } from "@/redux/actionCr
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store} >
+    <Provider store={store}
+      onIncrement={() => store.dispatch(counterIncrementAction)}
+      onDecrement={() => { store.dispatch(counterDecrementAction) }}
+    >
       <Component {...pageProps} />
     </Provider>
   )
