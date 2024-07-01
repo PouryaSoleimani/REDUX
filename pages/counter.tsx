@@ -4,7 +4,6 @@ import React from 'react'
 import { useRecoilState } from 'recoil'
 import { COUNTERSTATE } from '@/RECOIL/atoms'
 import { NextPage } from 'next'
-import { counterIncrementAction, counterDecrementAction } from "@/redux/actionCreators";
 
 //COMPONENT 
 const CounterPage: NextPage = () => {
