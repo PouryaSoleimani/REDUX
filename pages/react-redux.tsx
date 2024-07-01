@@ -1,9 +1,12 @@
 //^ REACT-REDUX PAGE =======================================================================================================
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { increment, decrement } from '@/features/counter/counterSlice'
 
 const ReactReduxPage = () => {
 
+  const count = useSelector((state: any) => state.counter.count)
+  const dispatch = useDispatch();
 
   //REACT USESTATE
   const [counter, setCounter] = useState(0)
@@ -28,9 +31,4 @@ const ReactReduxPage = () => {
   )
 }
 
-function mapStateToProps(state: any) {
-  console.log("STORE :", state)
-  return {}
-}
-
-export default connect(mapStateToProps)(ReactReduxPage)
+export default ReactReduxPage
