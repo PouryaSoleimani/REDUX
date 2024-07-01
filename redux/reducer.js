@@ -1,4 +1,5 @@
-//! REDUX REDUCER FILE
+//! REDUX REDUCER FILE 
+
 const reducer = (state = 0, action) => {
   switch (action.type) {
     case "INCREMENT": { return state + 1 }
