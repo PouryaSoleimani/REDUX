@@ -21,7 +21,7 @@ const ReactReduxPage = () => {
         <h1>{counter}</h1>
         <div className='flex items-center justify-center space-x-5 mt-8'>
           <button className='bg-green-700 px-7 h-20 text-md rounded-lg' onClick={increment}>+</button>
-          <button className='bg-sky-700 px-6 h-20 text-md rounded-lg' onClick={reset}>↻</button>
+          <button className='bg-sky-700 px-6 h-20 text-[30px] rounded-lg' onClick={reset}>↻</button>
           <button className='bg-red-700 px-8 h-20 text-md rounded-lg' onClick={decrement}>-</button>
         </div>
       </div>
