@@ -1,7 +1,7 @@
 import React from "react";
 
 const reducerfunction = () => {
-  //  FIRST TEST
+  // TEST 1
   const numArrays = [1, 2, 3, 4, 5];
 
   const sumNumber = numArrays.reduce((a, b) => {
@@ -9,7 +9,8 @@ const reducerfunction = () => {
   });
 
   console.info("SUM ====> ", sumNumber);
-  // SECOND TEST
+
+  // TEST 2
   const numArrays2 = [
     [1, 2, 3],
     [4, 5, 6],
@@ -20,7 +21,14 @@ const reducerfunction = () => {
     return [...firstArray, ...secondArray]; // Concating the two arrays to achieve just one array
   });
 
+  // TEST 3
   console.info("SUM 2 =========>", sum2);
+
+  const alphabetArray = [["a"], ["b"], ["c"], ["d"], ["e"], ["f"], ["g"]];
+  const alphabetString = alphabetArray.reduce((a, b) => {
+    return a.concat(b);
+  });
+  console.info("ALPHABET =====>", alphabetString.join().replaceAll(",", " "));
 
   return (
     <div>
