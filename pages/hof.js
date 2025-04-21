@@ -47,7 +47,8 @@ const hof = () => {
       console.info("2nd FUNCTION", numberTwo);
     };
   }
-  
+  console.info(firstFunc(5)(10));
+
   // SHORT FORM
   const firstFunc2 = (numberOne) => (numberTwo) => numberOne + numberTwo;
   console.info(firstFunc2(5)(10));
