@@ -53,12 +53,12 @@ const hof = () => {
   const firstFunc2 = (numberOne) => (numberTwo) => numberOne + numberTwo;
   console.info(firstFunc2(5)(10));
 
-  const hofFunction = () => {
+  const HOFFUNCTION = () => {
     return () => {
       console.info("INNER FUNCTION HOF");
     };
   };
-  hofFunction()(); // CALLING THE INNER FUNCTION OF A HOF FUNCTION
+  HOFFUNCTION()(); // CALLING THE INNER FUNCTION OF A HOF FUNCTION
 
   // RETURN ============================================================================================================================================================
   return (
