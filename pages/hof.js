@@ -18,13 +18,16 @@ const hof = () => {
   console.info("DOUBLED NUMBERS", DoubledNumber);
   console.info("FILTERED NUMBERS", FilteredNumber);
 
-  function randomNumebrGenerator() {
+  //  USER GENERATOR
+  function randomNumberGenerator() {
     return Math.floor(Math.random() * 1000);
   }
+  function userGenerator(userName, randomNumberGenerator) {
+    const _USER = `${userName} - ID : ${randomNumberGenerator()}`;
+    console.info(_USER);
+  }
 
-
-
-
+  userGenerator("Pourya", randomNumberGenerator);
 
   // RETURN ============================================================================================================================================================
   return (
