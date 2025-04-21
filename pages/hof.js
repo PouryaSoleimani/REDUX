@@ -22,14 +22,32 @@ const hof = () => {
   function randomNumberGenerator() {
     return Math.floor(Math.random() * 1000);
   }
-  
+
   function userGenerator(userName, randomNumberGenerator) {
     const _USER = `${userName} - ID : ${randomNumberGenerator()}`;
     console.info(_USER);
   }
 
   userGenerator("Pourya", randomNumberGenerator);
+  // HOF FUNCTIONS  2==========================================================================================================================================
 
+  function FOO() {
+    // A HOF that return a function for output
+    console.info("FOOOOOO OUTSIDE");
+    return function FOOINNER() {
+      return "HELLO FROM FOOOOO INSIDE";
+    };
+  }
+  console.info(FOO()());
+
+  function firstFunc(numberOne) {
+    console.info("1st FUNCTION", numberOne);
+    return function secondFunc(numberTwo) {
+      console.info("2nd FUNCTION", numberTwo);
+    };
+  }
+  
+  console.info(firstFunc(1)(2));
   // RETURN ============================================================================================================================================================
   return (
     <div>
