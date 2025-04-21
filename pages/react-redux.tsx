@@ -18,7 +18,7 @@ const ReactReduxPage = () => {
           <button onClick={() => dispatch(increment())} className='bg-green-700 px-7 h-20 text-md rounded-lg'>+</button>
           <button onClick={() => dispatch(decrement())} className='bg-red-700 px-8 h-20 text-md rounded-lg'>-</button>
         </div>
-      </div>
+      </div> 
     </main>
   )
 }
