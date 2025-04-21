@@ -15,6 +15,7 @@ const reducerfunction = () => {
     [4, 5, 6],
     [7, 8, 9],
   ];
+  
   const sum2 = numArrays2.reduce((firstArray, secondArray) => {
     return [...firstArray, ...secondArray];
   });
