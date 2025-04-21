@@ -16,9 +16,17 @@ const hof = () => {
     return item % 2 == 0;
   });
   console.info("DOUBLED NUMBERS", DoubledNumber);
-  console.info("Filtered NUMBERS", FilteredNumber);
+  console.info("FILTERED NUMBERS", FilteredNumber);
 
-  // RETURN ================================================================================================================
+  function randomNumebrGenerator() {
+    return Math.floor(Math.random() * 1000);
+  }
+
+
+
+
+
+  // RETURN ============================================================================================================================================================
   return (
     <div>
       <h1 className="p-4 text-center font-black text-3xl text-black bg-[#FABB14]">
