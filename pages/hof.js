@@ -40,6 +40,7 @@ const hof = () => {
   }
   console.info(FOO()());
 
+  // HOF FUNCTIONS TYPE 2
   function firstFunc(numberOne) {
     console.info("1st FUNCTION", numberOne);
     return function secondFunc(numberTwo) {
@@ -47,7 +48,10 @@ const hof = () => {
     };
   }
   
-  console.info(firstFunc(1)(2));
+  // SHORT FORM
+  const firstFunc2 = (numberOne) => (numberTwo) => numberOne + numberTwo;
+  console.info(firstFunc2(5)(10));
+
   // RETURN ============================================================================================================================================================
   return (
     <div>
