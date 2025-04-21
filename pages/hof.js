@@ -22,6 +22,7 @@ const hof = () => {
   function randomNumberGenerator() {
     return Math.floor(Math.random() * 1000);
   }
+  
   function userGenerator(userName, randomNumberGenerator) {
     const _USER = `${userName} - ID : ${randomNumberGenerator()}`;
     console.info(_USER);
