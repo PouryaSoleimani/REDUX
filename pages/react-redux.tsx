@@ -1,11 +1,11 @@
 //^ REACT-REDUX PAGE =======================================================================================================
-import React, { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { increment, decrement } from '@/features/counter/counterSlice'
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from '@/features/counter/counterSlice';
 
 const ReactReduxPage = () => {
 
-  const count = useSelector((state: any) => state.counter.count)
+  const count = useSelector((state: any) => state.counter.count);
   const dispatch = useDispatch();
 
   //RETURN
@@ -15,12 +15,12 @@ const ReactReduxPage = () => {
       <div className='w-full text-center mt-10 text-6xl font-bold'>
         <h1>{count}</h1>
         <div className='flex items-center justify-center space-x-5 mt-8'>
-          <button onClick={() => dispatch(increment())} className='bg-green-700 px-7 h-20 text-md rounded-lg'>+</button>
-          <button onClick={() => dispatch(decrement())} className='bg-red-700 px-8 h-20 text-md rounded-lg'>-</button>
+          <button onClick={() => dispatch(increment())} className='bg-green-700   size-16 flex items-center justify-center leading-tight   text-md rounded-lg'>+</button>
+          <button onClick={() => dispatch(decrement())} className='bg-red-700 size-16 flex items-center justify-center leading-tight   text-md rounded-lg'>-</button>
         </div>
-      </div> 
+      </div>
     </main>
-  )
-}
+  );
+};
 
-export default ReactReduxPage
+export default ReactReduxPage;
