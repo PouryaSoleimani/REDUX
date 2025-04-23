@@ -6,18 +6,15 @@ interface props { 1: number }
 
 const mutation: React.FC<props> = () => {
 
-    // PRIMITIVE TYPES ( DOESNT CHANGE THE MAIN SOURE )
+    // PRIMITIVE TYPES ( DOESNT CHANGE THE MAIN SOURE ) ===> IMMUTABLE
     let number1 = "12";
     let number2 = number1;
     number2 = "10"
     console.info(number1, number2)
 
 
-    // REFRECNE TYPES ( CHANGE THE MAIN SOURE )
-    let obj1 = {
-        id: 1,
-        title: "Fake Title"
-    };
+    // REFRECNE TYPES ( CHANGE THE MAIN SOURE ) ===>  MUTABLE
+    let obj1 = { id: 1, title: "Fake Title" };
 
     let obj2 = obj1;
     console.info(obj1, obj2)
