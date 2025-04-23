@@ -1,6 +1,10 @@
 import React from 'react'
 
-const mutation = () => {
+
+interface props { 1: number }
+
+
+const mutation:React.FC<props> = () => {
     let number1 = "12";
     let number2 = number1;
     number2 = "10"
