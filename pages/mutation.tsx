@@ -4,12 +4,16 @@ import React from 'react'
 interface props { 1: number }
 
 
-const mutation:React.FC<props> = () => {
+const mutation: React.FC<props> = () => {
+
+    // PRIMITIVE TYPES ( DOESNT CHANGE THE MAIN SOURE )
     let number1 = "12";
     let number2 = number1;
     number2 = "10"
     console.info(number1, number2)
 
+
+    // REFRECNE TYPES ( CHANGE THE MAIN SOURE )
     let obj1 = {
         id: 1,
         title: "Fake Title"
