@@ -15,10 +15,11 @@ export const todolistStore = [
   { id: 2, title: "learn redux", createdAT: "yesterday", isDone: false },
 ];
 
+// ^ SHOP  STORE
 let shopStore = {
   products: [],
   atricles: [],
   users: [],
   admins: [],
-  orders : []
+  orders: [],
 };
