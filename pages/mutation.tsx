@@ -24,11 +24,18 @@ const mutation: React.FC<props> = () => {
 
 
 
+    let numbersArray = [1, 2, 3, 4, 5]
+    numbersArray[0] = 0
+
+    let firstNumberArrays = [1, 2, 3, 4, 5]
+    let secondNumbersArrays = firstNumberArrays.map(item => item * 2) // DOESNT MUTATE THE FIRST ARRAY
+
+    console.info(firstNumberArrays, secondNumbersArrays)
 
 
-
-
-
+    let reversedNumbersArrays = [...firstNumberArrays].reverse()
+    console.info("FIRST ARRAY ==>", firstNumberArrays)
+    console.info("REVERSED ARRAY ==>", reversedNumbersArrays)
 
 
 
