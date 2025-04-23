@@ -8,6 +8,7 @@ export const store = configureStore({
   },
 });
 
+//* STORES ________________________________________________________________________________________________________________________________________________
 export const counterStore = 0;
 
 export const todolistStore = [
@@ -15,7 +16,7 @@ export const todolistStore = [
   { id: 2, title: "learn redux", createdAT: "yesterday", isDone: false },
 ];
 
-// ^ SHOP  STORE
+// ^ SHOP  STORE __________________________________________________________________________________________________________________________________________
 let shopStore = {
   products: [],
   atricles: [],
@@ -23,3 +24,14 @@ let shopStore = {
   admins: [],
   orders: [],
 };
+
+// ! ACTIONS ______________________________________________________________________________________________________________________________________________
+// COUNTER
+let incrementAction = { type: "INCREMENT" };
+let decrementAction = { type: "DECREMENT" };
+
+// TODOLIST
+let addTodoAction = { type: "ADD_TODO" };
+let completedTodoAction = { type: "COMPLETE_TODO" };
+let removeTodoAction = { type: "REMOVE_TODO" };
+let getTodosAction = { type: "GET_TODOS" };
