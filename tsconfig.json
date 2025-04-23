@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/react-redux.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/react-redux.tsx", "pages/mutation.js"],
   "exclude": ["node_modules"]
 }
