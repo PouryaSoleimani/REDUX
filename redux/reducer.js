@@ -1,11 +1,31 @@
-//! REDUX REDUCER FILE 
-import { counterIncrement, counterDecrement } from "./actionTypes"
+//! REDUX REDUCER FILE
+import { counterIncrement, counterDecrement } from "./actionTypes";
+import { incrementAction, decrementAction } from "./actionTypes";
 
-const reducer = (state = 0, action) => {
-  switch (action.type) {
-    case counterIncrement: { return state + 1 }
-    case counterDecrement: { return state - 1 }
-    default: { return state }
+
+// COUNTER REDUCER
+export const counterReducer = (action) => {
+  switch (action) {
+    case "INCREMENT": {
+      return newStore;
+    }
+    case "DECREMENT": {
+      return newStore;
+    }
   }
-}
-export default reducer
+};
+
+// TODOS REDUCER
+export const todosReducer = () => {
+  switch (action.type) {
+    case "ADD_TO": {
+      return newTodos;
+    }
+    case "COMPLETED_TODO": {
+      return newTodos;
+    }
+    case "REMOVE_TODO": {
+      return newTodos;
+    }
+  }
+};

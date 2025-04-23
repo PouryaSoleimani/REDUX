@@ -5,8 +5,8 @@ export const counterIncrement = "INCREMENT";
 export const counterDecrement = "DECREMENT";
 
 // COUNTER
-let incrementAction = { type: "INCREMENT" };
-let decrementAction = { type: "DECREMENT" };
+export const incrementAction = { type: "INCREMENT" };
+export const decrementAction = { type: "DECREMENT" };
 
 // TODOLIST
 let addTodoAction = { type: "ADD_TODO" };
