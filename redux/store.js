@@ -14,3 +14,11 @@ export const todolistStore = [
   { id: 1, title: "learn js", createdAT: "today", isDone: false },
   { id: 2, title: "learn redux", createdAT: "yesterday", isDone: false },
 ];
+
+let shopStore = {
+  products: [],
+  atricles: [],
+  users: [],
+  admins: [],
+  orders : []
+};
