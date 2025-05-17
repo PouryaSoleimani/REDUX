@@ -18,6 +18,7 @@ const hof = () => {
   console.info("DOUBLED NUMBERS", DoubledNumber);
   console.info("FILTERED NUMBERS", FilteredNumber);
 
+  //^ HOF FUNCTIONS ==========================================================================================================================================
   //  USER GENERATOR ( HOF FUNCTION )
   function randomNumberGenerator() {
     return Math.floor(Math.random() * 1000);
