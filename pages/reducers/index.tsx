@@ -38,6 +38,7 @@ const reducerfunction = () => {
     ["cherry", "date"],
     ["elderberry", "fig"],
   ];
+
   const reduceddFruits = fruitsArray.reduce((a, b) => {
     return a.concat(b);
   });
