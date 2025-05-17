@@ -2,7 +2,6 @@
 import { counterIncrement, counterDecrement } from "./actionTypes";
 import { incrementAction, decrementAction } from "./actionTypes";
 
-
 // COUNTER REDUCER
 export const counterReducer = (action) => {
   switch (action) {
@@ -16,7 +15,7 @@ export const counterReducer = (action) => {
 };
 
 // TODOS REDUCER
-export const todosReducer = () => {
+export const todosReducer = (action) => {
   switch (action.type) {
     case "ADD_TO": {
       return newTodos;
