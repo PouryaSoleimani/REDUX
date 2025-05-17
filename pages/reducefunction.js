@@ -33,6 +33,17 @@ const reducerfunction = () => {
     alphabetString.join().toUpperCase().replaceAll(",", " ")
   );
 
+  const fruitsArray = [
+    ["apple", "banana"],
+    ["cherry", "date"],
+    ["elderberry", "fig"],
+  ];
+  const reduceddFruits = fruitsArray.reduce((a, b) => {
+    return a.concat(b);
+  });
+
+  console.info("FRUITS =====>", reduceddFruits);
+
   return (
     <div>
       <h1 className="p-4 text-center font-black text-3xl text-black bg-[#FABB14]">
