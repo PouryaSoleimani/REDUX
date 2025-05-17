@@ -28,7 +28,10 @@ const reducerfunction = () => {
   const alphabetString = alphabetArray.reduce((a, b) => {
     return a.concat(b);
   });
-  console.info("ALPHABET =====>", alphabetString.join().toUpperCase().replaceAll(",", " "));
+  console.info(
+    "ALPHABET =====>",
+    alphabetString.join().toUpperCase().replaceAll(",", " ")
+  );
 
   return (
     <div>
